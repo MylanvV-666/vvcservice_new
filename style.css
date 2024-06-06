@@ -30,11 +30,11 @@ nav .logo {
     overflow: hidden;
 }
 
-nav .logo a #groot {
+#groot {
     width: 300px;
 }
 
-nav .logo a #klein {
+#klein {
     width: 100px;
     display: none;
 }
@@ -682,12 +682,12 @@ footer #undertheline div img {
         display: none;
     }
 
-    nav .logo a #groot {
+    #groot {
         display: none;
         width: 300px;
     }
 
-    nav .logo a #klein {
+    #klein {
         width: 100px;
         display: flex;
     }
