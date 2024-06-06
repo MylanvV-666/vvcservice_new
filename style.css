@@ -12,7 +12,7 @@ body {
 
 /*navigatie*/
 
-nav {
+.nav {
     background-color: black;
     display: flex;
     flex-direction: row;
@@ -26,7 +26,7 @@ nav {
     overflow: hidden;
 }
 
-nav .logo {
+.nav .logo {
     overflow: hidden;
 }
 
@@ -39,7 +39,7 @@ nav .logo {
     display: none;
 }
 
-nav .navigatie_groot {
+.nav .navigatie_groot {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -47,22 +47,22 @@ nav .navigatie_groot {
     max-width: 75%;
 }
 
-nav a {
+.nav a {
     font-size: 20px;
     color: white;
     text-decoration: none;
     padding: 20px;
 }
 
-nav a:hover {
+.nav a:hover {
     color: #97BF10;
 }
 
-nav .actieflink {
+.nav .actieflink {
     color: #97BF10;
 }
 
-nav a button {
+.nav a button {
     background-color: #97BF10;
     border: none;
     border-radius: 20px;
@@ -72,12 +72,12 @@ nav a button {
     color: white;
 }
 
-nav a button:hover {
+.nav a button:hover {
     background-color: #fff;
     color: #97BF10;
 }
 
-nav .navigatie_klein {
+.nav .navigatie_klein {
     display: none;
 }
 
@@ -678,7 +678,7 @@ footer #undertheline div img {
 
 @media screen and (max-width:1400px) {
     /*navigatie*/
-    nav .navigatie_groot {
+    .nav .navigatie_groot {
         display: none;
     }
 
@@ -692,7 +692,7 @@ footer #undertheline div img {
         display: flex;
     }
 
-    nav .navigatie_klein {
+    .nav .navigatie_klein {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -700,17 +700,17 @@ footer #undertheline div img {
         max-width: 75%;
     }
 
-    nav .hamburgermenu {
+    .nav .hamburgermenu {
         display: flex;
         width: 50px;
         margin: 20px;
     }
 
-    nav .hamburgermenuinhoud {
+    .nav .hamburgermenuinhoud {
         display: none;
     }
 
-    nav .navigatie_klein:hover .hamburgermenuinhoud, nav .hamburgermenuinhoud:hover {
+    .nav .navigatie_klein:hover .hamburgermenuinhoud, nav .hamburgermenuinhoud:hover {
         display: flex;
         flex-direction: column;
         position: fixed;
@@ -741,11 +741,11 @@ footer #undertheline div img {
 }
 
 @media screen and (max-width:1200px) {
-    nav .logogroot {
+    .nav .logogroot {
         display: none;
     }
 
-    nav .logoklein {
+    .nav .logoklein {
         display: flex;
     }
 
