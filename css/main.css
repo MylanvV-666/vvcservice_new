@@ -612,6 +612,7 @@ footer #undertheline div img {
   }
   .oplossingen div .imgdiv {
     display: none;
+    width: 0;
   }
   .oplossingen div .imgdiv img {
     display: none;
