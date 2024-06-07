@@ -610,7 +610,7 @@ footer #undertheline div img {
   .oplossingen div div {
     width: 100%;
   }
-  .oplossingen .imgdiv {
+  .oplossingen div .imgdiv {
     display: none;
   }
 }
