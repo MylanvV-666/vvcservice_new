@@ -618,8 +618,26 @@ footer {
   }
 }
 
-@media screen and (min-width: 1201px) and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
   nav {
+    .logo {
+      overflow: hidden;
+
+
+      a {
+        width: 20%;
+
+        #groot {
+          display: none;
+        }
+
+        #klein {
+          width: inherit;
+          display: flex;
+        }
+      }
+    }
+
     .navigatie_groot {
       display: none;
     }
@@ -683,7 +701,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 901px) and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   #overons {
     main {
       #overonstekst {
@@ -713,7 +731,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 501px) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
   #home #partners img {
     width: 150px;
   }
