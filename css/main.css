@@ -612,8 +612,8 @@ footer #undertheline div img {
   }
   .oplossingen div .imgdiv {
     display: none;
-    width: 1px;
-    height: 1px;
+    width: 0;
+    height: 0;
     background-color: black;
   }
   .oplossingen div .imgdiv img {

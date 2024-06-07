@@ -757,10 +757,11 @@ footer {
       .optekst {
         width: 100%;
       }
+
       .imgdiv {
         display: none;
-        width: 1px;
-        height: 1px;
+        width: 0;
+        height: 0;
         background-color: black;
 
         img {
