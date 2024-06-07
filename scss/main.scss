@@ -759,6 +759,10 @@ footer {
       }
       .imgdiv {
         display: none;
+
+        img {
+          display: none;
+        }
       }
     }
   }

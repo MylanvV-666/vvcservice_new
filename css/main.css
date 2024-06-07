@@ -613,6 +613,9 @@ footer #undertheline div img {
   .oplossingen div .imgdiv {
     display: none;
   }
+  .oplossingen div .imgdiv img {
+    display: none;
+  }
 }
 @media screen and (max-width: 500px) {
   #home #partners {
