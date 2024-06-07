@@ -463,7 +463,7 @@ footer #undertheline div img {
   justify-content: space-between;
   margin: 50px auto;
 }
-.backgrounddiensten .oplossingen div div {
+.backgrounddiensten .oplossingen div .optekst {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -471,11 +471,11 @@ footer #undertheline div img {
   padding: 0 10px;
   width: 80%;
 }
-.backgrounddiensten .oplossingen div div h5 {
+.backgrounddiensten .oplossingen div .optekst h5 {
   color: #97BF10;
   font-size: 25px;
 }
-.backgrounddiensten .oplossingen div div p {
+.backgrounddiensten .oplossingen div .optekst p {
   font-size: 20px;
 }
 .backgrounddiensten .oplossingen .imgdiv {
@@ -572,7 +572,7 @@ footer #undertheline div img {
     justify-content: space-evenly;
     width: 100%;
   }
-  .oplossingen div div {
+  .oplossingen div .optekst {
     width: 75%;
   }
 }
@@ -607,12 +607,14 @@ footer #undertheline div img {
   #contact main #contactmain #formulier form {
     width: 90%;
   }
-  .oplossingen div div {
+  .oplossingen div .optekst {
     width: 100%;
   }
   .oplossingen div .imgdiv {
     display: none;
-    width: 0;
+    width: 1px;
+    height: 1px;
+    background-color: black;
   }
   .oplossingen div .imgdiv img {
     display: none;

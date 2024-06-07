@@ -555,7 +555,7 @@ footer {
       justify-content: space-between;
       margin: 50px auto;
 
-      div {
+      .optekst {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -696,7 +696,7 @@ footer {
     width: 100%;
   }
 
-  .oplossingen div div {
+  .oplossingen div .optekst {
     width: 75%;
   }
 }
@@ -754,12 +754,14 @@ footer {
 
   .oplossingen {
     div {
-      div {
+      .optekst {
         width: 100%;
       }
       .imgdiv {
         display: none;
-        width: 0;
+        width: 1px;
+        height: 1px;
+        background-color: black;
 
         img {
           display: none;
