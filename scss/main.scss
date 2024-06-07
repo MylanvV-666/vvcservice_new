@@ -1,0 +1,806 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato,"sans-serif";
+  color: white;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+  max-width: 100%;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 6px 20px 0 #97BF10;
+  align-items: center;
+  height: 100px;
+  z-index: 10;
+  overflow: hidden;
+
+  .logo {
+    overflow: hidden;
+
+
+    a {
+      width: 20%;
+
+      #groot {
+        width: inherit;
+      }
+
+      #klein {
+        width: fit-content;
+        display: none;
+      }
+    }
+  }
+
+  .navigatie_groot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+  }
+
+  a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+
+    &:hover {
+      color: #97BF10;
+    }
+
+    button {
+      background-color: #97BF10;
+      border: none;
+      border-radius: 20px;
+      font-size: 20px;
+      padding: 20px;
+      box-shadow: 5px 5px 10px #97BF10;
+      color: white;
+
+      &:hover {
+        background-color: #fff;
+        color: #97BF10;
+      }
+    }
+
+    .actieflink {
+      color: #97BF10;
+    }
+  }
+
+  .navigatie_klein {
+    display: none;
+  }
+}
+
+footer {
+  background-image: url("assets/background2.png");
+  background-position: top;
+  width: 100%;
+  padding: 100px 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 600px;
+
+  #gegevens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    div {
+      padding-bottom: 50px;
+
+      h4 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      a img {
+        width: 100px;
+      }
+    }
+  }
+
+  #undertheline div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 150px;
+    }
+  }
+}
+
+#home {
+  main {
+    header {
+      min-width: 100%;
+      height: 900px;
+      padding-top: 350px;
+      background-image: url("assets/A0 LIGGEND_klein_versie_zonder_logo.png");
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+
+      div {
+        hr {
+          width: 200px;
+          margin: 0 auto;
+          border: 2px solid #97BF10;
+        }
+
+        h1 {
+          color: white;
+          font-size: 72px;
+          text-align: center;
+          padding: 20px 0;
+        }
+
+        h3 {
+          color: white;
+          font-size: 25px;
+          text-align: center;
+        }
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+
+    #diensten {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding: 150px 0;
+
+      h2 {
+        font-size: 48px;
+        color: #97BF10;
+        text-align: center;
+      }
+
+      #soortendiensten {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 65%;
+
+        a {
+          width: 250px;
+          height: 250px;
+          border-radius: 20px;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          flex-direction: column;
+          text-decoration: none;
+          margin: 20px;
+
+          h4 {
+            display: none;
+          }
+
+          button {
+            display: none;
+          }
+
+          &:hover {
+            h4 {
+              display: flex;
+              text-align: center;
+              font-size: 30px;
+              font-weight: normal;
+            }
+
+            button {
+              display: flex;
+              background-color: #97BF10;
+              border: none;
+              border-radius: 20px;
+              font-size: 20px;
+              padding: 20px;
+              box-shadow: 5px 5px 10px #4c503e;
+              color: white;
+
+              &:hover {
+                background-color: #fff;
+                color: #97BF10;
+              }
+            }
+          }
+        }
+
+        #cloud {
+          background-image: url("assets/cloud.png");
+          background-size: cover;
+
+          &:hover {
+            background-image: url("assets/cloud_groen.png");
+          }
+        }
+
+        #security {
+          background-image: url("assets/security.png");
+          background-size: cover;
+
+          &:hover {
+            background-image: url("assets/security_groen.png");
+          }
+        }
+
+        #hnsware {
+          background-image: url("assets/hard&software.png");
+          background-size: cover;
+
+          &:hover {
+            background-image: url("assets/hard&software_groen.png");
+          }
+        }
+      }
+    }
+  }
+}
+
+#overons {
+  main {
+    header {
+      background-image: url("assets/A0 LIGGEND_klein_versie_zonder_logo.png");
+      background-size: cover;
+      height: 500px;
+      padding: 300px 0 100px 0;
+
+      h1 {
+        font-size: 72px;
+        font-weight: normal;
+        text-align: center;
+      }
+    }
+
+    #overonstekst {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 75%;
+      align-items: center;
+      margin: 0 auto;
+
+      img {
+        width: 600px;
+        margin: 100px 50px;
+        border-radius: 20px;
+      }
+
+      p {
+        font-size: 20px;
+        margin: 100px 50px;
+      }
+    }
+
+    #team {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 75%;
+      align-items: center;
+      margin: 0 auto;
+      padding: 100px 0;
+
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+          width: 600px;
+          margin: 100px 50px;
+          border-radius: 20px;
+        }
+
+        p {
+          font-size: 20px;
+          margin: 100px 50px;
+        }
+      }
+
+      h2 {
+        font-size: 48px;
+        color: #97BF10;
+        text-align: center;
+      }
+    }
+
+    #kernwaarden {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 1100px;
+      align-items: center;
+      margin: 0 auto;
+      padding: 100px 15%;
+      background-image: url("assets/background.png");
+      background-size: cover;
+
+      div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        img {
+          width: 500px;
+          margin: 50px;
+        }
+
+        p {
+          font-size: 20px;
+          margin: 50px;
+        }
+
+        #rechts {
+          text-align: right;
+        }
+      }
+
+      h2 {
+        font-size: 48px;
+        color: #97BF10;
+        text-align: center;
+      }
+    }
+  }
+}
+
+#contact {
+  main {
+    header {
+      background-image: url("assets/A0 LIGGEND_klein_versie_zonder_logo.png");
+      background-size: cover;
+      height: 500px;
+      padding: 300px 0 100px 0;
+
+      h1 {
+        font-size: 72px;
+        font-weight: normal;
+        text-align: center;
+      }
+    }
+
+    #contactmain {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      width: 75%;
+      padding: 100px 0;
+      margin: 0 auto;
+
+      #linkerkantcontact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        div {
+          h2 {
+            font-size: 35px;
+            color: #97BF10;
+          }
+
+          p {
+            font-size: 20px;
+          }
+
+          img {
+            width: 100px;
+          }
+        }
+      }
+
+      #formulier {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h2 {
+          font-size: 35px;
+          color: #97BF10;
+        }
+
+        form {
+          display: flex;
+          flex-direction: column;
+          width: 600px;
+          height: 700px;
+
+          fieldset {
+            border: none;
+
+            input {
+              width: 47.7%;
+              height: 30px;
+              border: none;
+              border-radius: 10px;
+              padding: 10px;
+              margin: 2% 1%;
+              color: #4c503e;
+            }
+          }
+
+          input {
+            width: 98%;
+            height: 30px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 2% 1%;
+            color: #4c503e;
+          }
+
+          textarea {
+            width: 98%;
+            height: 75px;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 2% 1%;
+            color: #4c503e;
+          }
+
+          button {
+            width: 47.7%;
+            height: 40px;
+            border: none;
+            border-radius: 10px;
+            padding: 7px;
+            margin: 2% 1%;
+            color: #fff;
+            background-color: #97BF10;
+            box-shadow: 5px 5px 10px #97BF10;
+            font-size: 20px;
+
+            &:hover {
+              color: #97BF10;
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.backgrounddiensten {
+  background-image: url("assets/background.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  margin: 0;
+
+  .dienstenheaders {
+    background-image: url("assets/A0 LIGGEND_klein_versie_zonder_logo.png");
+    background-size: cover;
+    height: 500px;
+    padding: 300px 0 100px 0;
+
+    h1 {
+      font-size: 72px;
+      font-weight: normal;
+      text-align: center;
+    }
+  }
+
+  .deel1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 70%;
+    margin: 50px auto;
+
+    h2 {
+      font-size: 40px;
+      color: #97BF10;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+  }
+
+  .oplossingen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    margin: 50px auto 0 auto;
+
+    h2 {
+      color: #97BF10;
+      font-size: 40px;
+    }
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin: 50px auto;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: normal;
+        padding: 0 10px;
+        width: 80%;
+
+        h5 {
+          color: #97BF10;
+          font-size: 25px;
+        }
+
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .imgdiv {
+      background-color: white;
+      width: 260px;
+      height: 250px;
+      border-radius: 5px;
+
+      img {
+        width: 250px;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.privacyvoorwaarden {
+  main {
+    div {
+      width: 75%;
+      padding: 100px 0;
+      margin: 0 auto;
+
+      h2 {
+        color: #97BF10;
+        font-size: 40px;
+      }
+
+      h3 {
+        color: #fff;
+        font-size: 35px;
+      }
+
+      li {
+        color: #fff;
+        font-size: 20px;
+      }
+
+      p {
+        color: #fff;
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  nav {
+    .navigatie_groot {
+      display: none;
+    }
+
+    .navigatie_klein {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      max-width: 75%;
+
+      &:hover {
+        .hamburgermenuinhoud {
+          display: flex;
+          flex-direction: column;
+          position: fixed;
+          top: 80px;
+          right: 0;
+          background-color: black;
+          width: 300px;
+          height: 450px;
+          text-align: right;
+        }
+      }
+
+      .hamburgermenu {
+        display: flex;
+        width: 50px;
+        margin: 20px;
+      }
+
+      .hamburgermenuinhoud {
+        display: none;
+
+        &:hover {
+          display: flex;
+          flex-direction: column;
+          position: fixed;
+          top: 80px;
+          right: 0;
+          background-color: black;
+          width: 300px;
+          height: 450px;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 100px 5%;
+  }
+
+  #home #diensten #soortendiensten {
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .oplossingen div div {
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  #overons {
+    main {
+      #overonstekst {
+        flex-direction: column;
+        justify-content: start;
+
+        img {
+          margin: 100px 50px 0 50px;
+        }
+      }
+
+      #team {
+        div {
+          flex-direction: column-reverse;
+          justify-content: start;
+
+          img {
+            margin: 100px 50px 0 50px;
+          }
+        }
+      }
+    }
+  }
+
+  #contact main #contactmain {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 900px) {
+  #home #partners img {
+    width: 150px;
+  }
+
+  #contact {
+    main {
+      #contactmain {
+        flex-direction: column;
+        justify-content: start;
+        margin: 50px;
+
+        #formulier {
+          form {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+
+  .oplossingen {
+    div {
+      div {
+        width: 100%;
+      }
+    }
+
+    .imgdiv {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #home #partners {
+    display: none;
+  }
+
+  #overons {
+    main {
+      #overonstekst {
+        width: 100%;
+
+        img {
+          display: none;
+        }
+      }
+
+      #team {
+        width: 100%;
+
+        div {
+          img {
+            display: none;
+          }
+        }
+      }
+
+      #kernwaarden {
+        height: auto;
+        padding: 100px 10%;
+
+        div {
+          flex-direction: column;
+          justify-content: start;
+
+          img {
+            display: none;
+          }
+
+          p {
+            margin: 20px 0;
+          }
+
+          #rechts {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+
+  #contact main #formulier form {
+    width: 80%;
+
+    fieldset input {
+      width: 98%;
+    }
+  }
+}
