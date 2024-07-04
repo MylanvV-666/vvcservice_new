@@ -43,13 +43,13 @@ nav .navigatie_groot {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  width: 75%;
+  width: 100%;
 }
 nav a {
   font-size: 20px;
   color: white;
   text-decoration: none;
-  padding: 20px;
+  margin: 20px;
 }
 nav a:hover {
   color: #97BF10;
@@ -57,7 +57,7 @@ nav a:hover {
 nav a button {
   background-color: #97BF10;
   border: none;
-  border-radius: 20px;
+  border-radius: 10px;
   font-size: 20px;
   padding: 20px;
   box-shadow: 5px 5px 10px #97BF10;
@@ -243,13 +243,14 @@ footer #undertheline div img {
   margin: 0 auto;
 }
 #overons main #overonstekst img {
-  width: 600px;
+  width: 45%;
   margin: 100px 50px;
   border-radius: 20px;
 }
 #overons main #overonstekst p {
   font-size: 20px;
-  margin: 100px 50px;
+  margin: 100px 0;
+  width: 50%;
 }
 #overons main #team {
   display: flex;
@@ -267,13 +268,14 @@ footer #undertheline div img {
   align-items: center;
 }
 #overons main #team div img {
-  width: 600px;
+  width: 45%;
   margin: 100px 50px;
   border-radius: 20px;
 }
 #overons main #team div p {
   font-size: 20px;
-  margin: 100px 50px;
+  margin: 100px 0;
+  width: 50%;
 }
 #overons main #team h2 {
   font-size: 48px;
@@ -336,8 +338,10 @@ footer #undertheline div img {
 }
 #contact main #contactmain #linkerkantcontact {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
 }
 #contact main #contactmain #linkerkantcontact div h2 {
   font-size: 35px;
@@ -486,7 +490,8 @@ footer #undertheline div img {
 }
 .backgrounddiensten .oplossingen .imgdiv img {
   width: 250px;
-  padding: 10px;
+  height: fit-content;
+  margin: auto;
 }
 
 .privacyvoorwaarden main div {
@@ -511,7 +516,7 @@ footer #undertheline div img {
   font-size: 20px;
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1700px) {
   nav .logo {
     overflow: hidden;
   }
@@ -565,6 +570,8 @@ footer #undertheline div img {
     height: 450px;
     text-align: right;
   }
+}
+@media screen and (max-width: 1400px) {
   footer {
     padding: 100px 5%;
   }
@@ -577,27 +584,139 @@ footer #undertheline div img {
   }
 }
 @media screen and (max-width: 1200px) {
+  #overons main #kernwaarden {
+    padding: 50px 0;
+    height: 800px;
+  }
+  #overons main #kernwaarden div img {
+    display: none;
+  }
   #overons main #overonstekst {
+    width: 80%;
     flex-direction: column;
     justify-content: start;
   }
   #overons main #overonstekst img {
+    width: 100%;
     margin: 100px 50px 0 50px;
+  }
+  #overons main #overonstekst p {
+    width: 100%;
+  }
+  #overons main #team {
+    width: 80%;
   }
   #overons main #team div {
     flex-direction: column-reverse;
     justify-content: start;
   }
   #overons main #team div img {
+    width: 100%;
     margin: 100px 50px 0 50px;
+  }
+  #overons main #team div p {
+    width: 100%;
   }
   #contact main #contactmain {
     width: 100%;
   }
 }
 @media screen and (max-width: 900px) {
-  #home #partners img {
-    width: 150px;
+  nav a {
+    font-size: 14px;
+  }
+  nav a button {
+    font-size: 14px;
+  }
+  footer #gegevens div h4 {
+    font-size: 20px;
+  }
+  footer #gegevens div p {
+    font-size: 14px;
+  }
+  #home main header div h1 {
+    font-size: 48px;
+  }
+  #home main header div h3 {
+    font-size: 25px;
+  }
+  #home main #diensten h2 {
+    font-size: 40px;
+  }
+  #home main #diensten #soortendiensten a:hover h4 {
+    font-size: 22px;
+  }
+  #home main #diensten #soortendiensten a:hover button {
+    font-size: 14px;
+  }
+  #overons main header h1 {
+    font-size: 48px;
+  }
+  #overons main #overonstekst p {
+    font-size: 14px;
+  }
+  #overons main #team div p {
+    font-size: 14px;
+  }
+  #overons main #team h2 {
+    font-size: 30px;
+  }
+  #overons main #kernwaarden div p {
+    font-size: 14px;
+  }
+  #overons main #kernwaarden h2 {
+    font-size: 30px;
+  }
+  #contact main header h1 {
+    font-size: 48px;
+  }
+  #contact main #contactmain #linkerkantcontact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+  }
+  #contact main #contactmain #linkerkantcontact div h2 {
+    font-size: 30px;
+  }
+  #contact main #contactmain #linkerkantcontact div p {
+    font-size: 14px;
+  }
+  #contact main #contactmain #formulier h2 {
+    font-size: 30px;
+  }
+  #contact main #contactmain #formulier form button {
+    font-size: 14px;
+  }
+  .backgrounddiensten .dienstenheaders h1 {
+    font-size: 48px;
+  }
+  .backgrounddiensten .deel1 h2 {
+    font-size: 30px;
+  }
+  .backgrounddiensten .deel1 p {
+    font-size: 14px;
+  }
+  .backgrounddiensten .oplossingen h2 {
+    font-size: 30px;
+  }
+  .backgrounddiensten .oplossingen div .optekst h5 {
+    font-size: 16px;
+  }
+  .backgrounddiensten .oplossingen div .optekst p {
+    font-size: 14px;
+  }
+  .privacyvoorwaarden main div h2 {
+    font-size: 30px;
+  }
+  .privacyvoorwaarden main div h3 {
+    font-size: 25px;
+  }
+  .privacyvoorwaarden main div li {
+    font-size: 14px;
+  }
+  .privacyvoorwaarden main div p {
+    font-size: 14px;
   }
   #contact main #contactmain {
     flex-direction: column;

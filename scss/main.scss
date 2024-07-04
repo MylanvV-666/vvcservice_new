@@ -48,14 +48,14 @@ nav {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    width: 75%;
+    width: 100%;
   }
 
   a {
     font-size: 20px;
     color: white;
     text-decoration: none;
-    padding: 20px;
+    margin: 20px;
 
     &:hover {
       color: #97BF10;
@@ -64,7 +64,7 @@ nav {
     button {
       background-color: #97BF10;
       border: none;
-      border-radius: 20px;
+      border-radius: 10px;
       font-size: 20px;
       padding: 20px;
       box-shadow: 5px 5px 10px #97BF10;
@@ -293,14 +293,15 @@ footer {
       margin: 0 auto;
 
       img {
-        width: 600px;
+        width: 45%;
         margin: 100px 50px;
         border-radius: 20px;
       }
 
       p {
         font-size: 20px;
-        margin: 100px 50px;
+        margin: 100px 0;
+        width: 50%;
       }
     }
 
@@ -320,14 +321,15 @@ footer {
         align-items: center;
 
         img {
-          width: 600px;
+          width: 45%;
           margin: 100px 50px;
           border-radius: 20px;
         }
 
         p {
           font-size: 20px;
-          margin: 100px 50px;
+          margin: 100px 0;
+          width: 50%;
         }
       }
 
@@ -405,8 +407,10 @@ footer {
 
       #linkerkantcontact {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
 
         div {
           h2 {
@@ -582,7 +586,9 @@ footer {
 
       img {
         width: 250px;
-        padding: 10px;
+        height: fit-content;
+        margin: auto;
+
       }
     }
   }
@@ -618,7 +624,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1700px) {
   nav {
     .logo {
       overflow: hidden;
@@ -686,7 +692,9 @@ footer {
       }
     }
   }
+}
 
+@media screen and (max-width: 1400px) {
   footer {
     padding: 100px 5%;
   }
@@ -704,22 +712,48 @@ footer {
 @media screen and (max-width: 1200px) {
   #overons {
     main {
+      #kernwaarden {
+        padding: 50px 0;
+        height: 800px;
+        div {
+          img {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  #overons {
+    main {
       #overonstekst {
+        width: 80%;
         flex-direction: column;
         justify-content: start;
 
         img {
+          width: 100%;
           margin: 100px 50px 0 50px;
+        }
+
+        p {
+          width: 100%;
         }
       }
 
       #team {
+        width: 80%;
+
         div {
           flex-direction: column-reverse;
           justify-content: start;
 
           img {
+            width: 100%;
             margin: 100px 50px 0 50px;
+          }
+
+          p {
+            width: 100%;
           }
         }
       }
@@ -732,8 +766,202 @@ footer {
 }
 
 @media screen and (max-width: 900px) {
-  #home #partners img {
-    width: 150px;
+  nav {
+    a {
+      font-size: 14px;
+
+      button {
+        font-size: 14px;
+      }
+    }
+  }
+
+  footer {
+    #gegevens {
+      div {
+        h4 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  #home {
+    main {
+      header {
+        div {
+          h1 {
+            font-size: 48px;
+          }
+
+          h3 {
+            font-size: 25px;
+          }
+        }
+      }
+
+      #diensten {
+        h2 {
+          font-size: 40px;
+        }
+
+        #soortendiensten {
+          a {
+            &:hover {
+              h4 {
+                font-size: 22px;
+              }
+
+              button {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #overons {
+    main {
+      header {
+        h1 {
+          font-size: 48px;
+        }
+      }
+
+      #overonstekst {
+        p {
+          font-size: 14px;
+        }
+      }
+
+      #team {
+        div {
+          p {
+            font-size: 14px;
+          }
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+      }
+
+      #kernwaarden {
+        div {
+          p {
+            font-size: 14px;
+          }
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  #contact {
+    main {
+      header {
+        h1 {
+          font-size: 48px;
+        }
+      }
+
+      #contactmain {
+        #linkerkantcontact {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 600px;
+          div {
+            h2 {
+              font-size: 30px;
+            }
+
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+
+        #formulier {
+          h2 {
+            font-size: 30px;
+          }
+
+          form {
+            button {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .backgrounddiensten {
+    .dienstenheaders {
+      h1 {
+        font-size: 48px;
+      }
+    }
+
+    .deel1 {
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .oplossingen {
+      h2 {
+        font-size: 30px;
+      }
+
+      div {
+        .optekst {
+          h5 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .privacyvoorwaarden {
+    main {
+      div {
+        h2 {
+          font-size: 30px;
+        }
+
+        h3 {
+          font-size: 25px;
+        }
+
+        li {
+          font-size: 14px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
   }
 
   #contact {
