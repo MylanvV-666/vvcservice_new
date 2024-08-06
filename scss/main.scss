@@ -84,6 +84,16 @@ nav {
   .navigatie_klein {
     display: none;
   }
+
+  #terug_naar_home {
+    margin-right: 5rem;
+    padding: 1rem;
+    width: 100px;
+    height: 100px;
+    img {
+      width: 100%;
+    }
+  }
 }
 
 footer {
@@ -168,6 +178,20 @@ footer {
 
       img {
         width: 100%;
+      }
+    }
+
+    #banners {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 300px;
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        width: fit-content;
+        height: fit-content;
       }
     }
 
@@ -621,6 +645,18 @@ footer {
         font-size: 20px;
       }
     }
+  }
+}
+
+#omleidingmain {
+  padding: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-size: 30px;
+    text-align: center;
   }
 }
 

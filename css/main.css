@@ -73,6 +73,15 @@ nav a .actieflink {
 nav .navigatie_klein {
   display: none;
 }
+nav #terug_naar_home {
+  margin-right: 5rem;
+  padding: 1rem;
+  width: 100px;
+  height: 100px;
+}
+nav #terug_naar_home img {
+  width: 100%;
+}
 
 footer {
   background-image: url("assets/background2.png");
@@ -142,6 +151,18 @@ footer #undertheline div img {
 }
 #home main header img {
   width: 100%;
+}
+#home main #banners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  overflow: hidden;
+}
+#home main #banners img {
+  width: fit-content;
+  height: fit-content;
 }
 #home main #diensten {
   width: 100%;
@@ -514,6 +535,17 @@ footer #undertheline div img {
 .privacyvoorwaarden main div p {
   color: #fff;
   font-size: 20px;
+}
+
+#omleidingmain {
+  padding: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#omleidingmain h3 {
+  font-size: 30px;
+  text-align: center;
 }
 
 @media screen and (max-width: 1700px) {
