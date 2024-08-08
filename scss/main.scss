@@ -1146,4 +1146,19 @@ footer {
       width: 98%;
     }
   }
+
+  #popup {
+    #popupinhoud {
+      width: 100% !important;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
 }
