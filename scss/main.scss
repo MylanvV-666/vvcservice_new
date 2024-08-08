@@ -695,11 +695,10 @@ footer {
     align-items: center;
 
     img {
+      width: 600px;
+      height: 600px;
       max-inline-size: 100%;
-      block-size: auto;
-      aspect-ratio: 2/1;
       object-fit: contain;
-      object-position: center;
     }
   }
 }
