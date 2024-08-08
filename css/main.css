@@ -582,6 +582,11 @@ footer #undertheline div img {
 }
 #popup #popupinhoud img {
   width: 100% !important;
+  max-inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 2/1;
+  object-fit: contain;
+  object-position: center;
 }
 
 @media screen and (max-width: 1700px) {

@@ -696,6 +696,11 @@ footer {
 
     img {
       width: 100% !important;
+      max-inline-size: 100%;
+      block-size: auto;
+      aspect-ratio: 2/1;
+      object-fit: contain;
+      object-position: center;
     }
   }
 }
