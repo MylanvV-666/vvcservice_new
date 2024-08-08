@@ -574,7 +574,7 @@ footer #undertheline div img {
   height: 100%;
 }
 #popup #popupinhoud {
-  width: 60% !important;
+  width: 100% !important;
   overflow: hidden;
   display: flex;
   justify-content: center;
