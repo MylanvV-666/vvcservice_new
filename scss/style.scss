@@ -1,0 +1,460 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato,"sans-serif";
+  color: white;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: black;
+  max-width: 100%;
+}
+
+nav {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 6px 20px 0 #97BF10;
+  align-items: center;
+  height: 100px;
+  z-index: 10;
+  overflow: hidden;
+
+  .logo {
+    overflow: hidden;
+
+
+    a {
+      width: 20%;
+
+      #groot {
+        width: inherit;
+      }
+
+      #klein {
+        width: fit-content;
+        display: none;
+      }
+    }
+  }
+
+  .navigatie_groot {
+    display: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+
+  a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+
+    &:hover {
+      color: #97BF10;
+    }
+
+    button {
+      background-color: #97BF10;
+      border: none;
+      border-radius: 10px;
+      font-size: 14px;
+      padding: 20px;
+      box-shadow: 5px 5px 10px #97BF10;
+      color: white;
+
+      &:hover {
+        background-color: #fff;
+        color: #97BF10;
+      }
+    }
+
+    .actieflink {
+      color: #97BF10;
+    }
+  }
+
+  .navigatie_klein {
+    display: flex;
+  }
+
+  #terug_naar_home {
+    margin-right: 5rem;
+    padding: 1rem;
+    width: 100px;
+    height: 100px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+footer {
+  background-image: url("assets/background2.png");
+  background-position: top;
+  width: 100%;
+  padding: 100px 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 600px;
+
+  #gegevens {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    div {
+      padding-bottom: 50px;
+
+      h4 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 20px;
+      }
+
+      a img {
+        width: 100px;
+      }
+    }
+  }
+
+  #undertheline div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 150px;
+    }
+  }
+}
+
+#home #partners {
+  display: none;
+}
+
+#overons {
+  main {
+    #overonstekst {
+      width: 100%;
+
+      img {
+        display: none;
+      }
+    }
+
+    #team {
+      width: 100%;
+
+      div {
+        img {
+          display: none;
+        }
+      }
+    }
+
+    #kernwaarden {
+      height: auto;
+      padding: 100px 10%;
+
+      div {
+        flex-direction: column;
+        justify-content: start;
+
+        img {
+          display: none;
+        }
+
+        p {
+          margin: 20px 0;
+        }
+
+        #rechts {
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+#contact main #formulier form {
+  width: 80%;
+
+  fieldset input {
+    width: 98%;
+  }
+}
+
+#popup {
+  #popupinhoud {
+    width: 100% !important;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  nav {
+    a {
+      font-size: 14px;
+
+      button {
+        font-size: 14px;
+      }
+    }
+  }
+
+  footer {
+    #gegevens {
+      div {
+        h4 {
+          font-size: 20px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  #home {
+    main {
+      header {
+        div {
+          h1 {
+            font-size: 48px;
+          }
+
+          h3 {
+            font-size: 25px;
+          }
+        }
+      }
+
+      #diensten {
+        h2 {
+          font-size: 40px;
+        }
+
+        #soortendiensten {
+          a {
+            &:hover {
+              h4 {
+                font-size: 22px;
+              }
+
+              button {
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #overons {
+    main {
+      header {
+        h1 {
+          font-size: 48px;
+        }
+      }
+
+      #overonstekst {
+        p {
+          font-size: 14px;
+        }
+      }
+
+      #team {
+        div {
+          p {
+            font-size: 14px;
+          }
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+      }
+
+      #kernwaarden {
+        div {
+          p {
+            font-size: 14px;
+          }
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+
+  #contact {
+    main {
+      header {
+        h1 {
+          font-size: 48px;
+        }
+      }
+
+      #contactmain {
+        #linkerkantcontact {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 600px;
+          div {
+            h2 {
+              font-size: 30px;
+            }
+
+            p {
+              font-size: 14px;
+            }
+          }
+        }
+
+        #formulier {
+          h2 {
+            font-size: 30px;
+          }
+
+          form {
+            button {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .backgrounddiensten {
+    .dienstenheaders {
+      h1 {
+        font-size: 48px;
+      }
+    }
+
+    .deel1 {
+      h2 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+
+    .oplossingen {
+      h2 {
+        font-size: 30px;
+      }
+
+      div {
+        .optekst {
+          h5 {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .privacyvoorwaarden {
+    main {
+      div {
+        h2 {
+          font-size: 30px;
+        }
+
+        h3 {
+          font-size: 25px;
+        }
+
+        li {
+          font-size: 14px;
+        }
+
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  #contact {
+    main {
+      #contactmain {
+        flex-direction: column;
+        justify-content: start;
+        margin: 50px;
+
+        #formulier {
+          form {
+            width: 90%;
+          }
+        }
+      }
+    }
+  }
+
+  .oplossingen {
+    div {
+      .optekst {
+        width: 100%;
+      }
+
+      .imgdiv {
+        display: none;
+        width: 0;
+        height: 0;
+        background-color: black;
+
+        img {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #popup {
+    #popupinhoud {
+      width: 100% !important;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
+}
